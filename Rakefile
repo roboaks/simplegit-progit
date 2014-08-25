@@ -11,6 +11,7 @@ spec = Gem::Specification.new do |s|
     s.summary   =   "A simple gem for using Git in Ruby code."
     s.files     =   FileList['lib/**/*'].to_a
     s.require_path  =   "lib"
+	s.bogus = "grok"
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|
@@ -21,3 +22,5 @@ task :default => "pkg/#{spec.name}-#{spec.version}.gem" do
     puts "generated latest version"
 end
 
+
+On br1 only!
